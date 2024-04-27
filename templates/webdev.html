@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+  </head>
+  {% extends "main.html"%}
+  
+  {% block content %}
+  
+  <main>
+    <div class="container py-4">
+      <header class="pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        </a>
+      </header>
+  
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Web Development</h1>
+          <p class="col-md-11 fs-5">Web development involves the creation and maintenance of websites and web applications. Front-end development focuses on the user interface and experience, using technologies like HTML for structure, CSS for styling, and JavaScript for interactivity. Back-end development involves server-side programming and database management, using languages such as Python, JavaScript (Node.js), Ruby, or PHP, along with frameworks like Django, Express.js, Ruby on Rails, or Laravel. Full-stack developers are proficient in both front-end and back-end technologies, allowing them to build and manage entire web projects. Additionally, web development often involves using version control systems like Git, deploying applications to web servers, and ensuring websites are responsive and accessible across different devices and browsers. The field of web development continues to evolve with new technologies and best practices, enabling developers to create dynamic and engaging web experiences. Here's also a youtube video to have a better understanding of the subject:</p>
+        </div>
+      </div>
+  
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-50 p-5 text-white bg-dark rounded-3">
+            <h2>Check and ask for any service</h2>
+            <p>You can see my achievements in my LinkedIn profile :<a href="https://www.linkedin.com/in/mehdi-boussoura-8892732b6/"> My LinkedIn</a>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; And if you want to get in touch with me <a href ="{{url_for('service_page')}}">click here</a> and fill the form. </p>
+            
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-light border rounded-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xGmIl7QbBiA?si=_N7QgnUkUpaxMlju" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+  
+      <footer class="pt-3 mt-4 text-muted border-top">
+        &copy; 2021
+      </footer>
+    </div>
+  </main>
+  
+  {%endblock%}

@@ -1,0 +1,53 @@
+<head>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/mystyle.css')}}">
+</head>
+{% extends "main.html"%}
+
+{% block content %}
+
+    <form id="informations">
+      <h1>Get in Touch with us</h1>
+      <div class="separation"></div>
+        <div class="corps-formulaire">
+        <div class="gauche">
+          <div class="groupe">
+            <label>Votre Prénom</label>
+            <input  name="name" type="text" class ="item" autocomplete="off" />
+            <i class="fas fa-user"></i>
+            <div class="error-txt">Full Name can't be blank</div>
+          </div>
+          <div class="groupe">
+            <label>Votre adresse e-mail</label>
+            <input name="mail" type="text" class ="item" autocomplete="off" />
+            <i class="fas fa-envelope"></i>
+            <div class="error-txt">E-main can't be blank</div>
+          </div>
+          <div class="groupe">
+            <label>Votre téléphone</label>
+            <input name="phone" type="text" class ="item" autocomplete="off" />
+            <i class="fas fa-mobile"></i>
+            <div class="error-txt">Phone Number can't be blank</div>
+          </div>
+          <div class="groupe">
+            <label>Subject</label>
+            <input name="subject" type="text" class ="item" autocomplete="off" />
+            <i class="fas fa-subject"></i>
+            <div class="error-txt">Subject can't be blank</div>
+          </div>
+        </div>
+
+        <div class="droite">
+          <div class="groupe">
+            <label>Message</label>
+            <textarea name ="message" class ="item" placeholder="Saisissez ici..."></textarea>
+            <div class="error-txt">Message can't be blank</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pied-formulaire" align="center">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+{%endblock%}

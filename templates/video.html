@@ -1,0 +1,43 @@
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+  </head>
+  {% extends "main.html"%}
+  
+  {% block content %}
+  
+  <main>
+    <div class="container py-4">
+      <header class="pb-3 mb-8 border-bottom">
+        
+      </header>
+  
+      <div class="p-4 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Video editing</h1>
+          <p class="col-md-11 fs-5">Video editing is the process of manipulating and arranging video footage to create a final video product. It involves tasks like cutting and trimming clips, adding transitions, applying visual and audio effects, and integrating graphics or text overlays. Video editors use specialized software like Adobe Premiere Pro, Final Cut Pro, or DaVinci Resolve to perform these tasks efficiently. The editing process also includes adjusting color grading, enhancing audio quality, and synchronizing multiple elements to achieve a cohesive narrative or visual presentation. Video editing is essential in various industries, including film, television, advertising, social media content creation, and online education, where polished and engaging videos are crucial for effective communication and storytelling. As technology advances, video editing tools continue to evolve, offering more sophisticated features and capabilities to empower creators in producing high-quality video content.</p>
+        </div>
+      </div>
+  
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-light border rounded-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y7Ci_H9bYEk?si=CPwIrAdDq_R6rs95" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-50 p-5 text-white bg-dark rounded-3">
+            <h2>Check and ask for any service</h2>
+            <p>You can see my achievements in my LinkedIn profile :<a href="https://www.linkedin.com/in/mehdi-boussoura-8892732b6/"> My LinkedIn</a>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; And if you want to get in touch with me <a href ="{{url_for('service_page')}}">click here</a> and fill the form. </p>
+            
+          </div>
+        </div>
+        
+      </div>
+  
+      <footer class="pt-3 mt-4 text-muted border-top">
+        &copy; 2021
+      </footer>
+    </div>
+  </main>
+  
+  {%endblock%}

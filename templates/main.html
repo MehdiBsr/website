@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Mehdi Boussoura">
+        <title>Mehdi</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+        <link rel="icon" href="{{url_for('static', filename='image/favicon.ico')}}">
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    </head>
+<body style ="background-color : rgb(178, 178, 178)">
+    <!--hada ga3 c juste ta3 la barre hadik en haut-->
+    <nav class="mynavbar">
+        <div class="mynavbar__container">
+            <ul class="mynavbar__menu">
+                <li class="mynavbar__item">
+                    <a href="{{url_for('index')}}" class="mynavbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="mynavbar__item">
+                    <a href="{{url_for('service_page')}}" class="mynavbar__links">
+                        Service
+                    </a>
+                </li>
+            </ul>
+            <a href="{{url_for('index')}}" id="mynavbar__logo">Mehdi</a>
+            <div class="mynavbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
+    {%block content%}
+
+    {%endblock%}
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    
+</body>
+</html>

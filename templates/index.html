@@ -1,0 +1,50 @@
+{% extends "main.html"%}
+
+{% block content %}
+
+
+<!--here is the main page -->
+<div class="main">
+    <div class="main__container">
+        <div class="main__content">
+            <h1>Hello, and welcome to my Website</h1>
+            <p>This website informs you about three of my skills which are: web development, video editing and 3D modeling. So here you will find some basic informations about these subjects. Adding that this website is also meant to provide my experience to help you either to discover one of these subjects or help you with your projects. </p>
+            <!-- <button class="main__btn"><a href="contact.html">Get started</a></button> -->
+        </div>
+        <div class="main__img--container">
+            <img src="../static/image/pic1.svg" alt="website" id="main__img">
+        </div>
+    </div>
+</div>
+
+<!--this part is for the services-->
+<div class="services">
+    <h1>see what hype is about</h1>
+    
+    <div class="services__container">
+        <div class="services__card">
+            <h2>are you ready</h2>
+            <p>web development</p>
+            <a href ="{{url_for('webdev')}}">
+            <button>get started</button>
+    </a>
+        </div>
+        <div class="services__card">
+            <h2>are you ready</h2>
+            <p>video editing</p>
+            <a href ="{{url_for('video')}}">
+            <button>get started</button>
+        </a>
+        </div>
+ 
+        <div class="services__card">
+            <h2>are you ready</h2>
+            <p>3D modeling</p>
+            <a href ="{{url_for('threeD')}}">
+            <button>get started</button>
+    </a>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
